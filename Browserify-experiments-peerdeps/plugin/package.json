@@ -1,0 +1,17 @@
+{
+  "name": "Thingamagic-coolPlugin",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository" :
+  { 
+	"type" : "git",
+	"url" : "http://github.com/totopouet/Thingamagic-plugin.git"
+  },
+  "devDependencies": {
+	"jasmine-node":"",
+	"browserify":""
+  }, 
+  "peerDependencies": {
+        "Thingamagic": "0.0.1"
+   }
+}
