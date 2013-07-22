@@ -19,7 +19,7 @@
   "scripts":
   { "test": "jasmine-node test/specs/",
     "postinstall" : "browserify index.js > bundle.js",
-	"start" :	"beefy --live --cwd example demo.js:bundle.js 9080 -- -t coffeeify"
+	"start" :	"beefy --live --cwd example demo.js:bundle.js 9080 -- --extension '.coffee' -t coffeeify "
   }
 }
 

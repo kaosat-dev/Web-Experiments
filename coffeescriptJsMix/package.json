@@ -14,12 +14,10 @@
     "jasmine-node": "1.10.2",
     "browserify": "git://github.com/kaosat-dev/node-browserify.git",
     "coffeeify": "0.5.1",
-    "coffee-script": ">= 1.3",
-	"beefy":""
+    "coffee-script": ">= 1.3"
   },
   "scripts": {
     "test": "jasmine-node --coffee test/specs/",
-    "postinstall": "browserify --extension '.coffee' -t coffeeify index.js > bundle.js",
-	"start" :	"beefy --live --cwd example demo.js:bundle.js 9080 "
+    "postinstall": "browserify --extension '.coffee' -t coffeeify index.js > bundle.js"
   }
 }
