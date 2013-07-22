@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@1.2.12
+3 info using node@v0.8.21
+4 verbose read json /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix',
+6 verbose install   [ 'jasmine-node', 'browserify', 'coffeeify', 'coffee-script' ] ]
+7 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/package.json
+8 info preinstall Thingamagic@0.0.1
+9 verbose read json /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/jasmine-node/package.json
+10 verbose read json /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/coffee-script/package.json
+11 verbose read json /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/browserify/package.json
+12 verbose read json /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/coffeeify/package.json
+13 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/package.json
+14 verbose readDependencies using package.json deps
+15 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/jasmine-node/package.json
+16 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/coffee-script/package.json
+17 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/browserify/package.json
+18 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/node_modules/coffeeify/package.json
+19 verbose already installed skipping jasmine-node@ /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+20 verbose already installed skipping browserify@ /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+21 verbose already installed skipping coffeeify@ /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+22 verbose already installed skipping coffee-script@>= 1.3 /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+23 silly resolved []
+24 info build /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+25 verbose from cache /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix/package.json
+26 verbose linkStuff [ false,
+26 verbose linkStuff   false,
+26 verbose linkStuff   false,
+26 verbose linkStuff   '/home/mmoisset/workspacetest/Web/Browserify-experiments' ]
+27 info linkStuff Thingamagic@0.0.1
+28 verbose linkBins Thingamagic@0.0.1
+29 verbose linkMans Thingamagic@0.0.1
+30 verbose rebuildBundles Thingamagic@0.0.1
+31 verbose rebuildBundles [ 'jasmine-node',
+31 verbose rebuildBundles   'coffee-script',
+31 verbose rebuildBundles   '.bin',
+31 verbose rebuildBundles   'browserify',
+31 verbose rebuildBundles   'coffeeify' ]
+32 info install Thingamagic@0.0.1
+33 info postinstall Thingamagic@0.0.1
+34 verbose unsafe-perm in lifecycle true
+35 silly exec sh "-c" "browserify --extension coffee -t coffeeify index.js > bundle.js"
+36 silly sh,-c,browserify --extension coffee -t coffeeify index.js > bundle.js,/home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix spawning
+37 info Thingamagic@0.0.1 Failed to exec postinstall script
+38 error Thingamagic@0.0.1 postinstall: `browserify --extension coffee -t coffeeify index.js > bundle.js`
+38 error `sh "-c" "browserify --extension coffee -t coffeeify index.js > bundle.js"` failed with 1
+39 error Failed at the Thingamagic@0.0.1 postinstall script.
+39 error This is most likely a problem with the Thingamagic package,
+39 error not with npm itself.
+39 error Tell the author that this fails on your system:
+39 error     browserify --extension coffee -t coffeeify index.js > bundle.js
+39 error You can get their info via:
+39 error     npm owner ls Thingamagic
+39 error There is likely additional logging output above.
+40 error System Linux 2.6.35-32-generic
+41 error command "nodejs" "/usr/bin/npm" "install"
+42 error cwd /home/mmoisset/workspacetest/Web/Browserify-experiments/Browserify-experiments-coffeescriptJsMix
+43 error node -v v0.8.21
+44 error npm -v 1.2.12
+45 error code ELIFECYCLE
+46 verbose exit [ 1, true ]
