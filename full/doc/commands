@@ -1,0 +1,9 @@
+npm install : install dependencies/ dev dependencies
+npm test : launch (jasmine) tests
+npm pack : create package 
+
+beefy --live --cwd example demo.js:bundle.js 9080
+//with coffeescript: -t coffeeify 
+//like so:
+beefy --live --cwd example demo.js:bundle.js 9080 -- -t coffeeify
+

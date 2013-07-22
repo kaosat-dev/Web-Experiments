@@ -1,0 +1,25 @@
+{
+  "name": "Browserify-experiments-autoupdate",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository" :
+  { 
+	"type" : "git",
+	"url" : "http://github.com/totopouet/Thingamagic.git"
+  },
+  "directories": {
+	"lib": "./lib",
+	"example": "./example"
+	},
+  "devDependencies": {
+	"jasmine-node":"",
+	"browserify":"",
+	"beefy":""
+  }, 
+  "scripts":
+  { "test": "jasmine-node test/specs/",
+    "postinstall" : "browserify index.js > bundle.js",
+	"start" :	"beefy --live --cwd example demo.js:bundle.js 9080 -- -t coffeeify"
+  }
+}
+
