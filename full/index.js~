@@ -24,6 +24,5 @@ module.exports.sayHello = sayHello;
 
 module.exports.sayHiToBob = sayHiToBob;
 
-/* this is a block of stuff*/
-//this is a one line stuff
+
 console.log(sayHiToBob());
