@@ -10,9 +10,5 @@
 	api stability indicators (à la nodejs)
 	markdown
 
-- changelog generation
-	use github issues api:
-	- extract closed/fixed issues in a version(s) delta
- 	- requires discipline in bug /feature reporting (a good thing)
-
+- changelog generation : works, cleaned up and extracted to its own repository at https://github.com/kaosat-dev/node-github-autoChangelog
 - solve issue with jasmine-node + require coffee files from js files (without extension)
