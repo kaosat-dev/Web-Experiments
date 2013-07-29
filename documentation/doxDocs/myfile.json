@@ -1,0 +1,56 @@
+[
+  {
+    "tags": [],
+    "description": {
+      "full": "<p>Bla</p>",
+      "summary": "<p>Bla</p>",
+      "body": ""
+    },
+    "ignore": false,
+    "code": "//module.exports.Thingamagic = Thingamagic\nmodule.exports.sayHello = sayHello\n\nfunction Thingamagic(core, opts) {\n  // protect against people who forget 'new'\n  if (!(this instanceof Thingamagic)) return new Thingamagic(core, opts)\n\n  // we need to store the passed in variables on 'this'\n  // so that they are available to the .prototype methods\n  this.core = core\n  this.opts = opts || {}\n\n}"
+  },
+  {
+    "tags": [
+      {
+        "type": "param",
+        "types": [
+          "Int"
+        ],
+        "name": "numberOfRepeats",
+        "description": ": number of times to repeat message"
+      },
+      {
+        "type": "param",
+        "types": [
+          "String"
+        ],
+        "name": "toto",
+        "description": ": text to repeat "
+      },
+      {
+        "type": "return",
+        "types": [
+          "String"
+        ],
+        "description": "repetated text"
+      },
+      {
+        "type": "api",
+        "visibility": "public"
+      }
+    ],
+    "description": {
+      "full": "<p>Display hi world the given number of times.</p>\n\n<h3>Examples:</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>",
+      "summary": "<p>Display hi world the given number of times.</p>",
+      "body": "<h3>Examples:</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>"
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function sayHello(numberOfRepeats, toto)\n{\n\treturn(\"hi world\");\n}",
+    "ctx": {
+      "type": "function",
+      "name": "sayHello",
+      "string": "sayHello()"
+    }
+  }
+]

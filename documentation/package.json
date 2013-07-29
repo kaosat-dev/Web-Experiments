@@ -13,11 +13,19 @@
 	},
   "devDependencies": {
 	"jasmine-node":"",
-	"browserify":""
+	"browserify":"",
+	"dox":"",
+	"markdox":"",
+	"doxx":"",
+	"dox-foundation":"",
+	"coddoc":"",
+	"crojsdoc":"",
+	"panino":"",
+	"jsdoc": "git://github.com/jsdoc3/jsdoc.git"
   }, 
   "scripts":
   { "test": "jasmine-node test/specs/",
-    "postinstall" : "browserify index.js > bundle.js"
+    "postinstall" : "browserify src/index.js > src/bundle.js & dox < src/index.js > doxDocs/myfile.json & markdox src/index.js & doxx --source src --target ./doxxDocs & dox-foundation --source src --target ./dox-foundationDocs & coddoc -d ./src -f html > coddocDocs/index.html" 
   }
 	
   

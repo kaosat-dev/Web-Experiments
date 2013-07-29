@@ -8,7 +8,10 @@ module.exports = function(core, opts) {
 
 // expose the DbStorage constructor so that it is available
 // in case someone wants to access the .prototype methods, etc
-module.exports.Thingamagic = Thingamagic
+/** Bla
+*
+**/
+//module.exports.Thingamagic = Thingamagic
 module.exports.sayHello = sayHello
 
 function Thingamagic(core, opts) {
@@ -22,7 +25,20 @@ function Thingamagic(core, opts) {
 
 }
 
-function sayHello()
+/**
+ * Display hi world the given number of times.
+ *
+ * ### Examples:
+ *
+ *     utils.escape('<script></script>')
+ *     // => '&lt;script&gt;&lt;/script&gt;'
+ *
+ * @param {Int} numberOfRepeats : number of times to repeat message
+ * @param {String} toto : text to repeat 
+ * @return {String} repetated text
+ * @api public
+ */
+function sayHello(numberOfRepeats, toto)
 {
 	return("hi world");
 }
