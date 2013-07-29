@@ -1,0 +1,22 @@
+{
+  "name": "Thingamagic",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/totopouet/Thingamagic.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "example": "./example"
+  },
+  "devDependencies": {
+    "jasmine-node": "1.10.2",
+    "browserify": "git://github.com/kaosat-dev/node-browserify.git",
+    "coffeeify-redux": "0.1.0"
+  },
+  "scripts": {
+    "test": "jasmine-node --coffee test/specs/",
+    "postinstall": "browserify --extension '.coffee' -t coffeeify-redux index.js > bundle.js"
+  }
+}
