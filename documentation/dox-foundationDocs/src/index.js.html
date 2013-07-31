@@ -213,28 +213,68 @@ code {
   margin-right: 6px;
   font-size: 0.7em;
 }
-</style><script srr="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/vendor/custom.modernizr.js"></script></head><body><div class="row"><div class="small-12 columns"><h1 class="page-title">Thingamagic<small> src/index.js</small></h1></div></div><div class="row"><div id="nav" class="large-3 columns"><div data-section="accordian" data-options="" class="section-container accordian"><div class="section"><p data-section-title class="title"><a href="../../dox-foundationDocs/src/bundle.js.html"><small>src/</small>bundle.js</a></p><div data-section-content class="content"><ul class="side-nav"><li><a href="../../dox-foundationDocs/src/bundle.js.html#sayHello">sayHello</a></li></ul></div></div><div class="section active"><p data-section-title class="title"><a href="../../dox-foundationDocs/src/index.js.html"><small>src/</small>index.js</a></p><div data-section-content class="content"><ul class="side-nav"><li><a href="../../dox-foundationDocs/src/index.js.html#sayHello">sayHello</a></li></ul></div></div></div></div><div class="small-12 large-9 columns"><article class="comment"><header></header><ul class="no-bullet tags"></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Bla</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">//module.exports.Thingamagic = Thingamagic
-module.exports.sayHello = sayHello
+</style><script srr="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/vendor/custom.modernizr.js"></script></head><body><div class="row"><div class="small-12 columns"><h1 class="page-title">Thingamagic<small> src/index.js</small></h1></div></div><div class="row"><div id="nav" class="large-3 columns"><div data-section="accordian" data-options="" class="section-container accordian"><div class="section"><p data-section-title class="title"><a href="../../dox-foundationDocs/src/bundle.js.html"><small>src/</small>bundle.js</a></p><div data-section-content class="content"><ul class="side-nav"></ul></div></div><div class="section active"><p data-section-title class="title"><a href="../../dox-foundationDocs/src/index.js.html"><small>src/</small>index.js</a></p><div data-section-content class="content"><ul class="side-nav"><li><a href="../../dox-foundationDocs/src/index.js.html#sayHello">sayHello</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#sayNothing">sayNothing</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#Thingamagic">Thingamagic</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#Owl">Owl</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#makeTemplate">makeTemplate</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#sdf">sdf</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#tpl">tpl</a></li><li><a href="../../dox-foundationDocs/src/index.js.html#Face3">Face3</a></li></ul></div></div></div></div><div class="small-12 large-9 columns"><article class="comment"><header></header><ul class="no-bullet tags"></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Module documentation</p></div></div></div></article><article class="comment"><header></header><ul class="no-bullet tags"></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">module.exports.Thingamagic = Thingamagic;
+module.exports.sayHello = sayHello;
+module.exports.Face3 = Face3;</code></pre></div></div></div></article><article class="comment"><header><h1 id="sayHello">sayHello</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>sayHello()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Int}</span><span class="name">numberOfRepeats</span><span class="description">number of times to repeat message</span></li><li class="tag"><span class="type">@param: </span><span class="types">{String}</span><span class="name">toto</span><span class="description">text to repeat </span></li><li class="tag"><span class="type">@return: </span><span class="types">{String}</span><span class="description">repetated text</span></li><li class="tag"><span class="type">@deprecated: </span><span class="string">this thing is deprecated</span></li><li class="tag"><span class="type">@author: </span><span class="string">kpouer</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>A function that says hello</p>
 
-function Thingamagic(core, opts) {
-  // protect against people who forget 'new'
-  if (!(this instanceof Thingamagic)) return new Thingamagic(core, opts)
-
-  // we need to store the passed in variables on 'this'
-  // so that they are available to the .prototype methods
-  this.core = core
-  this.opts = opts || {}
-
-}</code></pre></div></div></div></article><article class="comment"><header><h1 id="sayHello">sayHello</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>sayHello()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@param: </span><span class="types">{Int}</span><span class="name">numberOfRepeats</span><span class="description">: number of times to repeat message</span></li><li class="tag"><span class="type">@param: </span><span class="types">{String}</span><span class="name">toto</span><span class="description">: text to repeat </span></li><li class="tag"><span class="type">@return: </span><span class="types">{String}</span><span class="description">repetated text</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Display hi world the given number of times.</p>
-
-<h3>Examples:</h3>
+<h3>Examples</h3>
 
 <pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')
 // =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'
 </code></pre></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function sayHello(numberOfRepeats, toto)
 {
 	return(&quot;hi world&quot;);
-}</code></pre></div></div></div></article></div></div><!-- Foundation JS--><script type="text/javascript">document.write('<script src=' +
+};</code></pre></div></div></div></article><article class="comment"><header><h1 id="sayNothing">sayNothing</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>sayNothing()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@function: </span><span class="string">sayNothing</span></li><li class="tag"><span class="type">@return: </span><span class="types">{String}</span><span class="description">nothing</span></li><li class="tag"><span class="type">@deprecated: </span><span class="string">this thing is deprecated</span></li><li class="tag"><span class="type">@author: </span><span class="string">kpouer</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>A function that says nothing</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function sayNothing()
+{
+	return(&quot;&quot;);
+};</code></pre></div></div></div></article><article class="comment"><header><h1 id="Thingamagic">Thingamagic</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>Thingamagic()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@class: </span><span class="string">Thingamagic</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Thingamagic object proto</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function Thingamagic(core, opts)
+{
+};</code></pre></div></div></div></article><article class="comment"><header><h1 id="Owl">Owl</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>Owl()</h5></header><ul class="no-bullet tags"></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>@class</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function Owl(core, opts)
+{
+};</code></pre></div></div></div></article><article class="comment"><header><h1 id="makeTemplate">makeTemplate</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>makeTemplate()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@type: </span><span class="types">{String}</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Template used to produce the documentation for filter <code>:code</code></p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function makeTemplate()
+{
+};</code></pre></div></div></div></article><article class="comment"><header><h1 id="sdf">sdf</h1><h5 class="subheader"><div class="label radius ctx-type">property</div>Thingamagic.sdf</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@type: </span><span class="types">{String}</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Something</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">Thingamagic.sdf = &quot;horror&quot;;</code></pre></div></div></div></article><article class="comment"><header><h1 id="tpl">tpl</h1><h5 class="subheader"><div class="label radius ctx-type">property</div>compile.tpl</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@type: </span><span class="types">{String}</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Template used to produce the documentation</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">compile.tpl = fs.readFileSync(path.resolve(__dirname, '../views/template.jade')).toString();</code></pre></div></div></div></article><article class="comment"><header><h1 id="Face3">Face3</h1><h5 class="subheader"><div class="label radius ctx-type">function</div>Face3()</h5></header><ul class="no-bullet tags"><li class="tag"><span class="type">@author: </span><span class="string">mrdoob / http://mrdoob.com/</span></li><li class="tag"><span class="type">@author: </span><span class="string">alteredq / http://alteredqualia.com/</span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>Bla bla </p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">function Face3( a, b, c, normal, color, materialIndex ) {
+
+	this.a = a;
+	this.b = b;
+	this.c = c;
+
+	this.normal = normal instanceof THREE.Vector3 ? normal : new THREE.Vector3();
+	this.vertexNormals = normal instanceof Array ? normal : [ ];
+
+	this.color = color instanceof THREE.Color ? color : new THREE.Color();
+	this.vertexColors = color instanceof Array ? color : [];
+
+	this.vertexTangents = [];
+
+	this.materialIndex = materialIndex !== undefined ? materialIndex : 0;
+
+	this.centroid = new THREE.Vector3();
+
+};
+
+Face3.prototype = {
+
+	constructor: Face3,</code></pre></div></div></div></article><article class="comment"><header></header><ul class="no-bullet tags"><li class="tag"><span class="type">@function: </span><span class="string"></span></li></ul><div data-section="accordian" data-options="one_up: false;" class="section-container code auto"><div class="section"><p data-section-title class="title"><a href="#">Description</a></p><div data-section-content class="content description"><p>clone current face instance</p></div></div><div class="section"><p data-section-title class="title"><a href="#">Source</a></p><div data-section-content class="content"><pre><code class="language-javascript">clone: function () {
+
+		var face = new Face3( this.a, this.b, this.c );
+
+		face.normal.copy( this.normal );
+		face.color.copy( this.color );
+		face.centroid.copy( this.centroid );
+
+		face.materialIndex = this.materialIndex;
+
+		var i, il;
+		for ( i = 0, il = this.vertexNormals.length; i &lt; il; i ++ ) face.vertexNormals[ i ] = this.vertexNormals[ i ].clone();
+		for ( i = 0, il = this.vertexColors.length; i &lt; il; i ++ ) face.vertexColors[ i ] = this.vertexColors[ i ].clone();
+		for ( i = 0, il = this.vertexTangents.length; i &lt; il; i ++ ) face.vertexTangents[ i ] = this.vertexTangents[ i ].clone();
+
+		return face;
+
+	}
+
+};</code></pre></div></div></div></article></div></div><!-- Foundation JS--><script type="text/javascript">document.write('<script src=' +
 ('__proto__' in {} ? 'http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min' : 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min') +
 '.js><\/script>')
 </script><script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/foundation.min.js"></script><script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/js/foundation/foundation.reveal.min.js"></script><!-- Prism js--><script type="text/javascript">

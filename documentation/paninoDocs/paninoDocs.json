@@ -1,0 +1,162 @@
+{
+    "title": "Thingamagic 0.0.1 API documentation",
+    "date": "Wed, 31 Jul 2013 10:10:06 GMT",
+    "tree": {
+        "children": [
+            {
+                "id": "Owl",
+                "type": "class",
+                "description": "Owl object proto",
+                "short_description": "Owl object proto",
+                "line": 54,
+                "author": [],
+                "aliases": [],
+                "children": [
+                    {
+                        "undocumented": true,
+                        "type": "class method",
+                        "description": "    ",
+                        "id": "Owl.exports",
+                        "name": "exports",
+                        "signatures": [
+                            {}
+                        ],
+                        "name_prefix": "Owl.",
+                        "aliases": [],
+                        "children": [],
+                        "file": "src/index.js",
+                        "path": "Owl.exports",
+                        "outFile": "index.html#Owl.exports"
+                    },
+                    {
+                        "id": "Owl.sayHello",
+                        "type": "class method",
+                        "description": "A function that says hello\n\n### Examples\n\nutils.escape('<script></script>')\n// => '&lt;script&gt;&lt;/script&gt;'",
+                        "short_description": "A function that says hello\n",
+                        "line": 11,
+                        "author": [
+                            "kpouer"
+                        ],
+                        "signatures": [
+                            {
+                                "arguments": [
+                                    {
+                                        "name": "numberOfRepeats",
+                                        "description": "number of times to repeat message",
+                                        "types": [
+                                            "Int"
+                                        ],
+                                        "optional": false
+                                    },
+                                    {
+                                        "name": "toto",
+                                        "description": "text to repeat",
+                                        "types": [
+                                            "String"
+                                        ],
+                                        "optional": false
+                                    }
+                                ],
+                                "returns": [
+                                    {
+                                        "type": "String",
+                                        "description": "repetated text\n@api public"
+                                    }
+                                ]
+                            }
+                        ],
+                        "arguments": [
+                            {
+                                "name": "numberOfRepeats",
+                                "description": "number of times to repeat message",
+                                "types": [
+                                    "Int"
+                                ],
+                                "optional": false
+                            },
+                            {
+                                "name": "toto",
+                                "description": "text to repeat",
+                                "types": [
+                                    "String"
+                                ],
+                                "optional": false
+                            }
+                        ],
+                        "aliases": [],
+                        "children": [],
+                        "file": "src/index.js",
+                        "name": "sayHello",
+                        "name_prefix": "Owl.",
+                        "path": "Owl.sayHello",
+                        "outFile": "index.html#Owl.sayHello"
+                    },
+                    {
+                        "id": "Owl.sayNothing",
+                        "type": "class method",
+                        "description": "A function that says nothing",
+                        "short_description": "A function that says nothing",
+                        "line": 32,
+                        "author": [
+                            "kpouer"
+                        ],
+                        "signatures": [
+                            {
+                                "returns": [
+                                    {
+                                        "type": "String",
+                                        "description": "nothing\n@api public"
+                                    }
+                                ]
+                            }
+                        ],
+                        "arguments": [],
+                        "aliases": [],
+                        "children": [],
+                        "file": "src/index.js",
+                        "name": "sayNothing",
+                        "name_prefix": "Owl.",
+                        "path": "Owl.sayNothing",
+                        "outFile": "index.html#Owl.sayNothing"
+                    },
+                    {
+                        "undocumented": true,
+                        "type": "class method",
+                        "description": "    ",
+                        "id": "Owl.Thingamagic",
+                        "name": "Thingamagic",
+                        "signatures": [
+                            {}
+                        ],
+                        "name_prefix": "Owl.",
+                        "aliases": [],
+                        "children": [],
+                        "file": "src/index.js",
+                        "path": "Owl.Thingamagic",
+                        "outFile": "index.html#Owl.Thingamagic"
+                    }
+                ],
+                "file": "src/index.js",
+                "subclasses": [],
+                "name": "Owl",
+                "path": "Owl",
+                "outFile": "index.html"
+            },
+            {
+                "id": "Thingamagic",
+                "type": "class",
+                "description": "Thingamagic object proto",
+                "short_description": "Thingamagic object proto",
+                "line": 46,
+                "author": [],
+                "aliases": [],
+                "children": [],
+                "file": "src/index.js",
+                "subclasses": [],
+                "name": "Thingamagic",
+                "path": "Thingamagic",
+                "outFile": "index.html"
+            }
+        ]
+    }
+}
