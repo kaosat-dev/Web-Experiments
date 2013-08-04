@@ -1,0 +1,1 @@
+module.exports = '<p>\n	Hello world, shiney component speaking !\n</p>\n\n<h1>\nfsdf\n</h1>\n';

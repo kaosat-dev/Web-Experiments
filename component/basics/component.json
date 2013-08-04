@@ -1,0 +1,18 @@
+{
+  "name": "basics",
+  "repo": "kaosat-dev/basics",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "basics.css"
+  ]
+}
