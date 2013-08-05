@@ -2,12 +2,21 @@
   {
     "tags": [],
     "description": {
-      "full": "<p>Bla</p>",
-      "summary": "<p>Bla</p>",
+      "full": "<p>Module documentation</p>",
+      "summary": "<p>Module documentation</p>",
+      "body": ""
+    },
+    "ignore": false
+  },
+  {
+    "tags": [],
+    "description": {
+      "full": "",
+      "summary": "",
       "body": ""
     },
     "ignore": false,
-    "code": "//module.exports.Thingamagic = Thingamagic\nmodule.exports.sayHello = sayHello\n\nfunction Thingamagic(core, opts) {\n  // protect against people who forget 'new'\n  if (!(this instanceof Thingamagic)) return new Thingamagic(core, opts)\n\n  // we need to store the passed in variables on 'this'\n  // so that they are available to the .prototype methods\n  this.core = core\n  this.opts = opts || {}\n\n}"
+    "code": "module.exports.Thingamagic = Thingamagic;\nmodule.exports.sayHello = sayHello;\nmodule.exports.Face3 = Face3;"
   },
   {
     "tags": [
@@ -17,7 +26,7 @@
           "Int"
         ],
         "name": "numberOfRepeats",
-        "description": ": number of times to repeat message"
+        "description": "number of times to repeat message"
       },
       {
         "type": "param",
@@ -25,7 +34,7 @@
           "String"
         ],
         "name": "toto",
-        "description": ": text to repeat "
+        "description": "text to repeat "
       },
       {
         "type": "return",
@@ -37,20 +46,254 @@
       {
         "type": "api",
         "visibility": "public"
+      },
+      {
+        "type": "deprecated",
+        "string": "this thing is deprecated"
+      },
+      {
+        "type": "author",
+        "string": "kpouer"
       }
     ],
     "description": {
-      "full": "<p>Display hi world the given number of times.</p>\n\n<h3>Examples:</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>",
-      "summary": "<p>Display hi world the given number of times.</p>",
-      "body": "<h3>Examples:</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>"
+      "full": "<p>A function that says hello</p>\n\n<h3>Examples</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>",
+      "summary": "<p>A function that says hello</p>",
+      "body": "<h3>Examples</h3>\n\n<pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')\n// =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'\n</code></pre>"
     },
     "isPrivate": false,
     "ignore": false,
-    "code": "function sayHello(numberOfRepeats, toto)\n{\n\treturn(\"hi world\");\n}",
+    "code": "function sayHello(numberOfRepeats, toto)\n{\n\treturn(\"hi world\");\n};",
     "ctx": {
       "type": "function",
       "name": "sayHello",
       "string": "sayHello()"
     }
+  },
+  {
+    "tags": [
+      {
+        "type": "function",
+        "string": "sayNothing"
+      },
+      {
+        "type": "return",
+        "types": [
+          "String"
+        ],
+        "description": "nothing"
+      },
+      {
+        "type": "api",
+        "visibility": "public"
+      },
+      {
+        "type": "deprecated",
+        "string": "this thing is deprecated"
+      },
+      {
+        "type": "author",
+        "string": "kpouer"
+      }
+    ],
+    "description": {
+      "full": "<p>A function that says nothing</p>",
+      "summary": "<p>A function that says nothing</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function sayNothing()\n{\n\treturn(\"\");\n};",
+    "ctx": {
+      "type": "function",
+      "name": "sayNothing",
+      "string": "sayNothing()"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "class",
+        "string": "Thingamagic"
+      }
+    ],
+    "description": {
+      "full": "<p>Thingamagic object proto</p>",
+      "summary": "<p>Thingamagic object proto</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function Thingamagic(core, opts)\n{\n};",
+    "ctx": {
+      "type": "function",
+      "name": "Thingamagic",
+      "string": "Thingamagic()"
+    }
+  },
+  {
+    "tags": [],
+    "description": {
+      "full": "<p>@class</p>",
+      "summary": "<p>@class</p>",
+      "body": ""
+    },
+    "ignore": false,
+    "code": "function Owl(core, opts)\n{\n};",
+    "ctx": {
+      "type": "function",
+      "name": "Owl",
+      "string": "Owl()"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "type",
+        "types": [
+          "String"
+        ]
+      }
+    ],
+    "description": {
+      "full": "<p>Template used to produce the documentation for filter <code>:code</code></p>",
+      "summary": "<p>Template used to produce the documentation for filter <code>:code</code></p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function makeTemplate()\n{\n};",
+    "ctx": {
+      "type": "function",
+      "name": "makeTemplate",
+      "string": "makeTemplate()"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "type",
+        "types": [
+          "String"
+        ]
+      }
+    ],
+    "description": {
+      "full": "<p>Something</p>",
+      "summary": "<p>Something</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "Thingamagic.sdf = \"horror\";",
+    "ctx": {
+      "type": "property",
+      "receiver": "Thingamagic",
+      "name": "sdf",
+      "value": "\"horror\"",
+      "string": "Thingamagic.sdf"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "type",
+        "types": [
+          "String"
+        ]
+      }
+    ],
+    "description": {
+      "full": "<p>Template used to produce the documentation</p>",
+      "summary": "<p>Template used to produce the documentation</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "compile.tpl = fs.readFileSync(path.resolve(__dirname, '../views/template.jade')).toString();",
+    "ctx": {
+      "type": "property",
+      "receiver": "compile",
+      "name": "tpl",
+      "value": "fs.readFileSync(path.resolve(__dirname, '../views/template.jade')).toString()",
+      "string": "compile.tpl"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "private",
+        "string": ""
+      },
+      {
+        "type": "param",
+        "types": [
+          "Object"
+        ],
+        "name": "symbol",
+        "description": ""
+      },
+      {
+        "type": "return",
+        "types": [
+          "Object"
+        ],
+        "description": ""
+      }
+    ],
+    "description": {
+      "full": "<p>Private stuff, move along</p>",
+      "summary": "<p>Private stuff, move along</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function _mapSymbol(symbol){\n  symbol.tags = _compact(symbol.tags);\n}",
+    "ctx": {
+      "type": "function",
+      "name": "_mapSymbol",
+      "string": "_mapSymbol()"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "author",
+        "string": "mrdoob / http://mrdoob.com/"
+      },
+      {
+        "type": "author",
+        "string": "alteredq / http://alteredqualia.com/"
+      }
+    ],
+    "description": {
+      "full": "<p>Bla bla </p>",
+      "summary": "<p>Bla bla </p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "function Face3( a, b, c, normal, color, materialIndex ) {\n\n\tthis.a = a;\n\tthis.b = b;\n\tthis.c = c;\n\n\tthis.normal = normal instanceof THREE.Vector3 ? normal : new THREE.Vector3();\n\tthis.vertexNormals = normal instanceof Array ? normal : [ ];\n\n\tthis.color = color instanceof THREE.Color ? color : new THREE.Color();\n\tthis.vertexColors = color instanceof Array ? color : [];\n\n\tthis.vertexTangents = [];\n\n\tthis.materialIndex = materialIndex !== undefined ? materialIndex : 0;\n\n\tthis.centroid = new THREE.Vector3();\n\n};\n\nFace3.prototype = {\n\n\tconstructor: Face3,",
+    "ctx": {
+      "type": "function",
+      "name": "Face3",
+      "string": "Face3()"
+    }
+  },
+  {
+    "tags": [
+      {
+        "type": "function",
+        "string": ""
+      }
+    ],
+    "description": {
+      "full": "<p>clone current face instance</p>",
+      "summary": "<p>clone current face instance</p>",
+      "body": ""
+    },
+    "isPrivate": false,
+    "ignore": false,
+    "code": "clone: function () {\n\n\t\tvar face = new Face3( this.a, this.b, this.c );\n\n\t\tface.normal.copy( this.normal );\n\t\tface.color.copy( this.color );\n\t\tface.centroid.copy( this.centroid );\n\n\t\tface.materialIndex = this.materialIndex;\n\n\t\tvar i, il;\n\t\tfor ( i = 0, il = this.vertexNormals.length; i < il; i ++ ) face.vertexNormals[ i ] = this.vertexNormals[ i ].clone();\n\t\tfor ( i = 0, il = this.vertexColors.length; i < il; i ++ ) face.vertexColors[ i ] = this.vertexColors[ i ].clone();\n\t\tfor ( i = 0, il = this.vertexTangents.length; i < il; i ++ ) face.vertexTangents[ i ] = this.vertexTangents[ i ].clone();\n\n\t\treturn face;\n\n\t}\n\n};"
   }
 ]

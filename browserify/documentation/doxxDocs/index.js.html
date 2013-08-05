@@ -3,7 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width" charset="utf-8">
     <title>Thingamagic</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/docs.css">
     <style>
       body > .navbar .brand {
         float:left;
@@ -63,6 +65,20 @@
             <ul class="nav nav-list bs-docs-sidenav affix-top">
               <li><a href="#sayHello"><i class="alert alert-info"></i>sayHello</a>
               </li>
+              <li><a href="#sayNothing"><i class="alert alert-info"></i>sayNothing</a>
+              </li>
+              <li><a href="#Thingamagic"><i class="alert alert-info"></i>Thingamagic</a>
+              </li>
+              <li><a href="#Owl"><i class="alert alert-info"></i>Owl</a>
+              </li>
+              <li><a href="#makeTemplate"><i class="alert alert-info"></i>makeTemplate</a>
+              </li>
+              <li><a href="#sdf"><i class="alert alert-success"></i>sdf</a>
+              </li>
+              <li><a href="#tpl"><i class="alert alert-success"></i>tpl</a>
+              </li>
+              <li><a href="#Face3"><i class="alert alert-info"></i>Face3</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -74,20 +90,20 @@
               <div class="label label-success radius ctx-type"></div>
             </p>
           </section>
-          <div class="description"><p>Bla</p> 
-            <pre><code class="language-javascript">//module.exports.Thingamagic = Thingamagic
-module.exports.sayHello = sayHello
-
-function Thingamagic(core, opts) {
-  // protect against people who forget 'new'
-  if (!(this instanceof Thingamagic)) return new Thingamagic(core, opts)
-
-  // we need to store the passed in variables on 'this'
-  // so that they are available to the .prototype methods
-  this.core = core
-  this.opts = opts || {}
-
-}</code></pre>
+          <div class="description"><p>Module documentation</p> 
+            <pre><code class="language-javascript"></code></pre>
+          </div>
+          <section>
+            <h1></h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type"></div>
+            </p>
+          </section>
+          <div class="description"> 
+            <pre><code class="language-javascript">module.exports.Thingamagic = Thingamagic;
+module.exports.sayHello = sayHello;
+module.exports.Face3 = Face3;</code></pre>
           </div>
           <section id="sayHello">
             <h1>sayHello</h1>
@@ -108,18 +124,18 @@ function Thingamagic(core, opts) {
               <tr>
                 <td>numberOfRepeats</td>
                 <td>Int</td>
-                <td>: number of times to repeat message</td>
+                <td>number of times to repeat message</td>
               </tr>
               <tr>
                 <td>toto</td>
                 <td>String</td>
-                <td>: text to repeat </td>
+                <td>text to repeat </td>
               </tr>
             </tbody>
           </table>
-          <div class="description"><p>Display hi world the given number of times.</p>
+          <div class="description"><p>A function that says hello</p>
 
-<h3>Examples:</h3>
+<h3>Examples</h3>
 
 <pre><code>utils.escape('&lt;script&gt;&lt;/script&gt;')
 // =&gt; '&amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;'
@@ -127,7 +143,141 @@ function Thingamagic(core, opts) {
             <pre><code class="language-javascript">function sayHello(numberOfRepeats, toto)
 {
 	return(&quot;hi world&quot;);
-}</code></pre>
+};</code></pre>
+          </div>
+          <section id="sayNothing">
+            <h1>sayNothing</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>sayNothing()</span> -><span>String</span>
+            </p>
+          </section>
+          <div class="description"><p>A function that says nothing</p> 
+            <pre><code class="language-javascript">function sayNothing()
+{
+	return(&quot;&quot;);
+};</code></pre>
+          </div>
+          <section id="Thingamagic">
+            <h1>Thingamagic</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>Thingamagic()</span>
+            </p>
+          </section>
+          <div class="description"><p>Thingamagic object proto</p> 
+            <pre><code class="language-javascript">function Thingamagic(core, opts)
+{
+};</code></pre>
+          </div>
+          <section id="Owl">
+            <h1>Owl</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>Owl()</span>
+            </p>
+          </section>
+          <div class="description"><p>@class</p> 
+            <pre><code class="language-javascript">function Owl(core, opts)
+{
+};</code></pre>
+          </div>
+          <section id="makeTemplate">
+            <h1>makeTemplate</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>makeTemplate()</span>
+            </p>
+          </section>
+          <div class="description"><p>Template used to produce the documentation for filter <code>:code</code></p> 
+            <pre><code class="language-javascript">function makeTemplate()
+{
+};</code></pre>
+          </div>
+          <section id="sdf">
+            <h1>sdf</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type">property</div><span>Thingamagic.sdf</span>
+            </p>
+          </section>
+          <div class="description"><p>Something</p> 
+            <pre><code class="language-javascript">Thingamagic.sdf = &quot;horror&quot;;</code></pre>
+          </div>
+          <section id="tpl">
+            <h1>tpl</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type">property</div><span>compile.tpl</span>
+            </p>
+          </section>
+          <div class="description"><p>Template used to produce the documentation</p> 
+            <pre><code class="language-javascript">compile.tpl = fs.readFileSync(path.resolve(__dirname, '../views/template.jade')).toString();</code></pre>
+          </div>
+          <section id="Face3">
+            <h1>Face3</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>Face3()</span>
+            </p>
+          </section>
+          <div class="description"><p>Bla bla </p> 
+            <pre><code class="language-javascript">function Face3( a, b, c, normal, color, materialIndex ) {
+
+	this.a = a;
+	this.b = b;
+	this.c = c;
+
+	this.normal = normal instanceof THREE.Vector3 ? normal : new THREE.Vector3();
+	this.vertexNormals = normal instanceof Array ? normal : [ ];
+
+	this.color = color instanceof THREE.Color ? color : new THREE.Color();
+	this.vertexColors = color instanceof Array ? color : [];
+
+	this.vertexTangents = [];
+
+	this.materialIndex = materialIndex !== undefined ? materialIndex : 0;
+
+	this.centroid = new THREE.Vector3();
+
+};
+
+Face3.prototype = {
+
+	constructor: Face3,</code></pre>
+          </div>
+          <section>
+            <h1></h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type"></div>
+            </p>
+          </section>
+          <div class="description"><ul>
+<li><p>clone current face instance</p>
+
+<ul><li>@function</li></ul></li>
+</ul> 
+            <pre><code class="language-javascript">clone: function () {
+
+		var face = new Face3( this.a, this.b, this.c );
+
+		face.normal.copy( this.normal );
+		face.color.copy( this.color );
+		face.centroid.copy( this.centroid );
+
+		face.materialIndex = this.materialIndex;
+
+		var i, il;
+		for ( i = 0, il = this.vertexNormals.length; i &lt; il; i ++ ) face.vertexNormals[ i ] = this.vertexNormals[ i ].clone();
+		for ( i = 0, il = this.vertexColors.length; i &lt; il; i ++ ) face.vertexColors[ i ] = this.vertexColors[ i ].clone();
+		for ( i = 0, il = this.vertexTangents.length; i &lt; il; i ++ ) face.vertexTangents[ i ] = this.vertexTangents[ i ].clone();
+
+		return face;
+
+	}
+
+};</code></pre>
           </div>
         </div>
       </div>
@@ -142,11 +292,11 @@ function Thingamagic(core, opts) {
     <script src="http://platform.twitter.com/widgets.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="http://leaverou.github.com/prefixfree/prefixfree.js"></script>
-    <script src="http://twitter.github.com/bootstrap/js/transition.js"></script>
-    <script src="http://twitter.github.com/bootstrap/js/scrollspy.js"></script>
-    <script src="http://twitter.github.com/bootstrap/js/dropdown.js"></script>
-    <script src="http://twitter.github.com/bootstrap/js/collapse.js"></script>
-    <script src="http://twitter.github.com/bootstrap/js/affix.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-affix.js"></script>
     <script>
       /**
        * Prism: Lightweight, robust, elegant syntax highlighting
