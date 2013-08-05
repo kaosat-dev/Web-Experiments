@@ -1,0 +1,18 @@
+{
+  "name": "autobuild",
+  "repo": "kaosat-dev/autobuild",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+  	"components/component.coffee",
+    "index.js"
+  ],
+  "styles": [
+    "autobuild.css"
+  ]
+}
