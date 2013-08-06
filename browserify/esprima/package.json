@@ -1,0 +1,28 @@
+{
+  "name": "Browserify-experiments-autoupdate",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/totopouet/Thingamagic.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "example": "./example"
+  },
+  "devDependencies": {
+    "jasmine-node": "",
+    "browserify": "git://github.com/kaosat-dev/node-browserify.git",
+    "coffeeify-redux": "0.1.0",
+    "coffee-script": ">= 1.3",
+    "beefy": ""
+  },
+  "scripts": {
+    "test": "jasmine-node --coffee test/specs/",
+    "postinstall": "browserify --extension '.coffee' -t coffeeify-redux src/esprima.coffee > bundle.js",
+    "start": "beefy --live --cwd example bundle.js 9080 -- -d --extension '.coffee' -t coffeeify-redux "
+  },
+  "dependencies": {
+    "esprima": "~1.0.3"
+  }
+}

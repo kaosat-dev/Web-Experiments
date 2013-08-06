@@ -1,0 +1,16 @@
+<polymer-element name="model" attributes="filter items storageId">
+	<script>
+		Polymer('model', {
+			name: "base name",
+			counter:0,
+			
+			ready: function() {
+				this.asyncMethod(function() {
+					this.items = this.items || [];
+				});
+				console.log("lock & load");
+			}
+
+	 });
+	</script>
+</polymer-element>
