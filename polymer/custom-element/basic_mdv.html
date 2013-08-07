@@ -8,6 +8,18 @@
       <li>{{ what }}: <input type="text" value="{{ who }}"></li>
     </template>
   </ul>
+  	<div>
+	  	<template id="other" bind="{{ singleton }}">
+	  		Creates a single instance with {{ bindings }} when singleton model data is provided.
+		</template>
+	</div>
+
+<polymer-element name="tag-name">
+  <template>...</template>
+</polymer-element>
+
+<button value="Bla" onclick="OnButtonClicked();">Clicky!</button>
+	
 <script>
 var t = document.getElementById('greeting');
 var model = {
@@ -15,9 +27,37 @@ var model = {
     { what: 'Hello', who: 'Nuuurse' },
     { what: 'GoodBye', who: 'DOM APIs' },
     { what: 'Hello', who: 'Declarative' },
-    { what: 'GoodBye', who: 'Imperative' }
+    { what: 'GoodBye', who: 'Imperative' },
+    { what: 'Ola', who: 'Amigo' },
   ]
 };
 t.model = model;
+var mainModel = model;
+/////
+var t = document.getElementById('other');
+var model = {
+  bob: { name: 'bob', born: '2012-20-11' }
+  
+};
+t.model = model;
+
+/*dsfsdfsdfsdfds*/
+var obj = {
+  path: {
+    to: {
+      value: 'hi'
+    }
+  }
+};
+
+var textNode = document.createTextNode('test');
+textNode.bind('textContent', obj, 'path.to.value');
+
+
+function OnButtonClicked()
+{
+	console.log("I was clicked");
+	console.log(JSON.stringify(mainModel));
+}
 </script>
 </body>
